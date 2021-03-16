@@ -236,6 +236,7 @@ export default {
   }
   .file-drop-area img {
     margin-right: 1.3671875vh;
+    height:3.90625vh
   }
   .send-btn {
     height: 4.1015625vh;

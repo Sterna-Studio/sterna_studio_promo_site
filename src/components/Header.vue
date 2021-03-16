@@ -118,8 +118,8 @@ export default {
   display: none;
   width: 100vw;
   position: fixed;
-  left: 0;
-  top: 12.560386473429952vw;
+  top:12.560386473429952vw;
+  right: 0;
   background: #ffffff;
   z-index: 9;
 }
@@ -174,11 +174,11 @@ export default {
   }
   .slide-enter-active,
   .slide-leave-active {
-    transition: top 1s;
+    transition: right 0.5s;
   }
   .slide-enter,
   .slide-leave-to {
-    top: -42.02898550724638vh;
+    right: -100vw;
   }
 }
 @media screen and (min-width: 415px) and (max-width: 1024px) {

@@ -96,17 +96,17 @@ export default {
 }
 @media screen and (min-width: 415px) and (max-width: 1024px) {
   .promo-sterna-btn {
-    border-radius: 2.34375vw;
+    border-radius: 2.34375vh;
   }
   .small-with-icon {
-    height: 3.80859375vw;
-    padding: 0 3.80859375vw;
+    height: 3.80859375vh;
+    padding: 0 3.80859375vh;
   }
   .small-with-icon p {
-    margin-right: 0.78125vw;
+    margin-right: 0.78125vh;
   }
   .small-with-icon img {
-    height: 0.78125vw;
+    height: 0.78125vh;
   }
   .big-with-icon {
     height: 3.148148148148148vh;
