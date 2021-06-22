@@ -8,7 +8,7 @@
       </p>
     </div>
     <div class="main-projects-container">
-      <div class="project-row ">
+      <div class="project-row">
         <ProjectBlock
           image="https://img2.pngio.com/manager-project-delivery-transparent-png-clipart-free-download-ywd-project-delivery-png-1216_697.png"
         />
@@ -21,14 +21,14 @@
           <ProjectBlock width="half" />
         </div>
       </div>
-      <div class="project-row ">
+      <div class="project-row">
         <ProjectBlock
           image="https://d3timt52sxdbq0.cloudfront.net/wp-content/uploads/2015/07/Planning2-e1554986531973.jpg"
           text_position="outside-right"
         />
       </div>
     </div>
-    <h3 class="tc-r-ryb link-text-icon float-right mb-64 ">
+    <h3 class="tc-r-ryb link-text-icon float-right mb-64">
       Усі проекти <img src="/icons/arrow-right-red.svg" alt="" />
     </h3>
     <div class="about-studio-link mb-64">
@@ -45,7 +45,7 @@
     <p class="large tc-ind text-align-left mb-24">
       Після заповнення форми ми зв’яжемось з вами, щоб вияснити деталі
     </p>
-    <h3 class="tc-r-ryb link-text-icon float-right mb-42 ">
+    <h3 class="tc-r-ryb link-text-icon float-right mb-42">
       Більше проектів <img src="/icons/arrow-right-red.svg" alt="" />
     </h3>
     <div class="special-proposition">
@@ -64,7 +64,6 @@ export default {
   components: { ProjectBlock },
 };
 </script>
-
 <style scoped>
 .float-right {
   justify-content: flex-end;

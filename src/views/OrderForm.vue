@@ -1,13 +1,13 @@
 <template>
   <div class="order-form-page">
-    <div class="order-form" >
+    <div class="order-form">
       <h1 class="tc-e-black mb-16">Анкета замовлення</h1>
       <p class="medium tc-ind mb-32">
         Після відправлення анкети ми опрацюємо заявку. Обумовимо деталі та умови
         співпраці, складати договір. Якщо ми не можемо виконати роботу, ми
         напишемо про це також.
       </p>
-      <div  class="contacts-block mb-24">
+      <div class="contacts-block mb-24">
         <h2 class="tc-e-black mb-24">Контакти</h2>
         <div class="input-row mb-24">
           <p class="large large-bold tc-e-black">Назва компанії</p>
@@ -27,7 +27,8 @@
         </div>
         <div class="input-row mb-24">
           <p class="large large-bold tc-e-black">Звязок з вами через</p>
-          <PromoSternaSelect class="select-input"
+          <PromoSternaSelect
+            class="select-input"
             :select_list="call_List"
             :select_feature="call_feature"
             @select="selectContact"
@@ -37,11 +38,12 @@
       <h2 class="tc-e-black mb-24">Завдання</h2>
       <div class="input-row mb-24">
         <p class="large large-bold tc-e-black">Тип проекту</p>
-        <PromoSternaSelect class="select-input"
+        <PromoSternaSelect
+          class="select-input"
           :select_list="projectType_List"
           :select_feature="projectType_feature"
           @select="selectProject"
-          />
+        />
       </div>
       <!-- <p class="large large-bold tc-e-black mb-16">Файли</p>
       <p class="medium tc-ind mb-16">
@@ -63,7 +65,12 @@
           <span>Виберіть файл з пристрою. </span>
         </p>
       </div> -->
-      <PromoSternaBtn @click="add" class="send-btn" icon="empty" text="Відправити анкету"/>
+      <PromoSternaBtn
+        @click="add"
+        class="send-btn"
+        icon="empty"
+        text="Відправити анкету"
+      />
     </div>
   </div>
 </template>
@@ -72,72 +79,69 @@
 import PromoSternaSelect from "@/components/PromoSternaSelect.vue";
 import PromoSternaBtn from "@/components/PromoSternaBtn.vue";
 import firebase from "firebase/app";
-import 'firebase/auth';
-import 'firebase/database';
-import 'firebase/firestore';
-import 'firebase/storage';
+import "firebase/auth";
+import "firebase/database";
+import "firebase/firestore";
+import "firebase/storage";
 
 let config = {
   apiKey: "AIzaSyCz6OeMD88JlSLQ_z5mrJA8IEvqflZXIpY",
   authDomain: "sterna-firebase-vue.firebaseapp.com",
-  databaseURL: "https://sterna-firebase-vue-default-rtdb.europe-west1.firebasedatabase.app",
+  databaseURL:
+    "https://sterna-firebase-vue-default-rtdb.europe-west1.firebasedatabase.app",
   projectId: "sterna-firebase-vue",
   storageBucket: "sterna-firebase-vue.appspot.com",
   messagingSenderId: "332977085370",
-  appId: "1:332977085370:web:7a18296ee30cbcc78d9b83"
-}
+  appId: "1:332977085370:web:7a18296ee30cbcc78d9b83",
+};
 
-let app = firebase.initializeApp(config)
-let db = app.database()
-let textRef = db.ref('applications')
+let app = firebase.initializeApp(config);
+let db = app.database();
+let textRef = db.ref("applications");
 
 export default {
-  name: 'app', firebase:{
-    applications: textRef
+  name: "app",
+  firebase: {
+    applications: textRef,
   },
   components: {
     PromoSternaBtn,
     PromoSternaSelect,
   },
-  data(){
-    return{
-      call_List:[
-        'Viber', 'Telegram'
-      ],
-      projectType_List:[
-        'Promo', 'Store'
-      ],
-      call_feature:'contactType',
-      projectType_feature:'projectType',
-      orderNote:{
-        companyName:'',
-        customerName: '',
-        phoneNumber: '',
-        email: '',
-        contactType: '',
-        projectType: '',
-      }
-    }
+  data() {
+    return {
+      call_List: ["Viber", "Telegram"],
+      projectType_List: ["Promo", "Store"],
+      call_feature: "contactType",
+      projectType_feature: "projectType",
+      orderNote: {
+        companyName: "",
+        customerName: "",
+        phoneNumber: "",
+        email: "",
+        contactType: "",
+        projectType: "",
+      },
+    };
   },
-  methods:{
-    add : function(){
-      textRef.push(this.orderNote)
-      this.orderNote.customerName = ''
-      this.orderNote.companyName = ''
-      this.orderNote.phoneNumber = ''
-      this.orderNote.email = ''
-      this.orderNote.contactType = ''
-      this.orderNote.projectType = ''
+  methods: {
+    add: function () {
+      textRef.push(this.orderNote);
+      this.orderNote.customerName = "";
+      this.orderNote.companyName = "";
+      this.orderNote.phoneNumber = "";
+      this.orderNote.email = "";
+      this.orderNote.contactType = "";
+      this.orderNote.projectType = "";
     },
-    selectContact(item){
+    selectContact(item) {
       this.orderNote.contactType = item;
     },
-    selectProject(item){
+    selectProject(item) {
       this.orderNote.projectType = item;
-    }
-  }
-}
-
+    },
+  },
+};
 </script>
 <style scoped>
 .order-form-page {
@@ -316,7 +320,7 @@ export default {
   }
   .file-drop-area img {
     margin-right: 1.3671875vh;
-    height:3.90625vh
+    height: 3.90625vh;
   }
   .send-btn {
     height: 4.1015625vh;

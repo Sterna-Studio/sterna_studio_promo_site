@@ -43,22 +43,18 @@ export default {
 };
 </script>
 <style scoped>
-
 .project-block-container {
   position: relative;
   margin-bottom: 2.222222222222222vh;
 }
-
 .project-block-container img {
   object-fit: cover;
   object-position: center;
 }
-
 .full {
   width: 100%;
   height: 56.48148148148148vh;
 }
-
 .full img {
   width: 100%;
   height: 100%;
@@ -78,12 +74,10 @@ export default {
   bottom: 5.925925925925926vh;
   width: 73.7037037037037vh;
 }
-
 .half {
   width: calc(50% - 1.5vh);
   height: 45.648148148148145vh;
 }
-
 .half.outside-bottom img {
   width: 100%;
   height: 34.166666666666664vh;
@@ -93,21 +87,18 @@ export default {
   width: 100%;
   height: 100%;
 }
-
 .half.inside .project-description-block {
   width: calc(100% - (8.6vh));
   position: absolute;
   left: 2.222222222222222vh;
   bottom: 3.333333333333333vh;
 }
-
 .half.outside-bottom .project-description-block {
   width: 100%;
   position: absolute;
   left: 0;
   bottom: 0;
 }
-
 .half .project-description-block .mb {
   margin-bottom: 0.7407407407407407vh;
 }
@@ -117,14 +108,12 @@ export default {
   height: 100%;
   float: left;
 }
-
 .full.outside-right .project-description-block {
   width: 14.12%;
   position: absolute;
   right: 0;
   bottom: 0;
 }
-
 @media screen and (max-width: 414px) {
   .project-block-container {
     height: 79.71vw;
@@ -176,7 +165,6 @@ export default {
     width: 100%;
   }
 }
-
 @media screen and (min-width: 415px) and (max-width: 1024px) {
   .project-block-container {
     margin-bottom: 3.333333333333333vh;
@@ -224,7 +212,6 @@ export default {
     width: 27%;
   }
 }
-
 @media screen and (min-width: 1025px) and (max-width: 1366px) {
   .project-block-container {
     margin-bottom: 3.333333333333333vh;
@@ -258,5 +245,4 @@ export default {
     height: 73.88888888888889vh;
   }
 }
-
 </style>

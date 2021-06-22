@@ -8,20 +8,20 @@
         <div class="link-block">
           <p class="large tc-d-b-g">Хочете обговорити проект?</p>
           <p class="large large-bold tc-e-black">Заповніть заявку на сайті</p>
-          <p class="large  tc-e-black">manager@sterna.studio</p>
-          <p class="large  tc-e-black">чат в телеграмі</p>
-          <p class="large  tc-e-black">+38 (099) 359-14-67</p>
+          <p class="large tc-e-black">manager@sterna.studio</p>
+          <p class="large tc-e-black">чат в телеграмі</p>
+          <p class="large tc-e-black">+38 (099) 359-14-67</p>
         </div>
         <div class="link-block">
           <p class="large tc-d-b-g">Меню</p>
-          <p class="large  tc-e-black">Проекти</p>
-          <p class="large  tc-e-black">Про студію</p>
-          <p class="large  tc-e-black">Анкета</p>
+          <p class="large tc-e-black">Проекти</p>
+          <p class="large tc-e-black">Про студію</p>
+          <p class="large tc-e-black">Анкета</p>
         </div>
         <div class="link-block">
           <p class="large tc-d-b-g">Юридична інфомація</p>
-          <p class="large  tc-e-black">Умови використання</p>
-          <p class="large  tc-e-black">Cookies</p>
+          <p class="large tc-e-black">Умови використання</p>
+          <p class="large tc-e-black">Cookies</p>
         </div>
       </div>
     </div>
@@ -37,7 +37,6 @@
     </div>
   </div>
 </template>
-
 <style scoped>
 .footer {
   width: 100%;

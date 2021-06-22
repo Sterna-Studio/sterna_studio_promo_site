@@ -18,7 +18,7 @@
 </template>
 <script>
 export default {
-  props:{
+  props: {
     select_list: Array,
   },
   data() {
@@ -30,7 +30,7 @@ export default {
   methods: {
     selectItem(item) {
       this.selected = item;
-      this.$emit("select", this.selected)
+      this.$emit("select", this.selected);
     },
   },
 };

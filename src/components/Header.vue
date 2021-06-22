@@ -5,19 +5,17 @@
       <div class="action-block">
         <p
           @click="goToProjects()"
-          :class="
-            `large mr-24  c-p ${
-              routeName == 'projects' ? 'tc-e-black' : 'tc-s2'
-            }`
-          "
+          :class="`large mr-24  c-p ${
+            routeName == 'projects' ? 'tc-e-black' : 'tc-s2'
+          }`"
         >
           Проекти
         </p>
         <p
           @click="goToAbout()"
-          :class="
-            `large mr-24  c-p ${routeName == 'about' ? 'tc-e-black' : 'tc-s2'}`
-          "
+          :class="`large mr-24  c-p ${
+            routeName == 'about' ? 'tc-e-black' : 'tc-s2'
+          }`"
         >
           Про студію
         </p>
@@ -43,22 +41,22 @@
     </div>
     <transition name="slide">
       <div v-if="is_mobile_drop_down_active" class="navigation-drop-down">
-        <div class="drop-down-section ">
+        <div class="drop-down-section">
           <p
             @click="goToProjects()"
-            :class="
-              `large bold  ${routeName == 'projects' ? 'tc-e-black' : 'tc-s2'}`
-            "
+            :class="`large bold  ${
+              routeName == 'projects' ? 'tc-e-black' : 'tc-s2'
+            }`"
           >
             Проекти
           </p>
         </div>
-        <div class="drop-down-section ">
+        <div class="drop-down-section">
           <p
             @click="goToAbout()"
-            :class="
-              `large bold  ${routeName == 'about' ? 'tc-e-black' : 'tc-s2'}`
-            "
+            :class="`large bold  ${
+              routeName == 'about' ? 'tc-e-black' : 'tc-s2'
+            }`"
           >
             Про студію
           </p>
@@ -68,7 +66,6 @@
     </transition>
   </div>
 </template>
-
 <script>
 import PromoSternaBtn from "@/components/PromoSternaBtn.vue";
 export default {
@@ -119,7 +116,7 @@ export default {
   display: none;
   width: 100vw;
   position: fixed;
-  top:12.560386473429952vw;
+  top: 12.560386473429952vw;
   right: 0;
   background: #ffffff;
   z-index: 9;
