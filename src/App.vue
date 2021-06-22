@@ -6,10 +6,6 @@
   </div>
 </template>
 <script>
-<<<<<<< HEAD
-
-=======
->>>>>>> 4723b9a6d36af675b9ade61f52f06677eded59da
 import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
 export default {
